@@ -1,0 +1,20 @@
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://127.0.0.1:10001/eureka
+  instance:
+    prefer-ip-address: true
+max-semaphores: 200
+semaphore: ''
+server:
+  port: 10005
+spring:
+  application:
+    name: Zuuldemo2
+zuul:
+  routes:
+    eurekaClient1:
+      path: /api/**
+      url: http://127.0.0.1:7000/client/getClient
