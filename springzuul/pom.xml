@@ -7,7 +7,7 @@
 <packaging>jar</packaging>
 
 <name>server-center</name>
-<description>服务注册中心</description>
+<description>服务网关</description>
 
 <parent>
     <groupId>org.springframework.boot</groupId>
